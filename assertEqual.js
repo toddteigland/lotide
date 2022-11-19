@@ -10,3 +10,5 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual("Work from Home", 4);
 assertEqual("4",4);
+
+module.exports = assertEqual;
