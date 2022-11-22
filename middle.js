@@ -9,7 +9,7 @@ const middle = function (arr) {
    else if (arr.length % 2 === 0 && arr.length > 2) {
     newArr = arr.slice((arr.length / 2) - 1, ((arr.length /2) + 1))
    }
-   return newArr;
+   return (newArr);
 };
 
 module.exports = middle;
