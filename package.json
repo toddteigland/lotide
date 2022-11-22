@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@toddteigland/lotide",
   "version": "1.0.0",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -12,13 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/toddteigland/lotide.git"
   },
-  "author": "",
+  "author": "Todd Teigland",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/toddteigland/lotide/issues"
   },
   "homepage": "https://github.com/toddteigland/lotide#readme",
-  "description": "",
+  "description": "Todd's lotide library",
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
