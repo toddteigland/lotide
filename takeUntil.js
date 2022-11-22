@@ -1,3 +1,6 @@
+const eqArrays = require('./eqArrays')
+const assertArraysEqual = require('./assertArraysEqual')
+
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 
@@ -24,36 +27,11 @@ const callbackFunc = (element) => {
   }
 }
 
+module.exports = takeUntil;
 //const results2 = takeUntil(data2, x => x === ',');
 //console.log(results2);
 
 //console.log(takeUntil(data1,callbackFunc));
 
 
-
-// <<<<<<  TESTING FUNCTIONS >>>>>>
-
-const eqArrays = function (arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  } 
-  for(var i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function (arr1, arr2) {
-  if (eqArrays(arr1,arr2)) {
-    console.log(`👍👍👍 Assertion Passed: ${arr1} === ${arr2}`);
-  } 
-  else {
-    console.log(`👎👎👎 Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
-
-
-assertArraysEqual(takeUntil(data1,callbackFunc),[1,2,5,7,2]);
+//assertArraysEqual(takeUntil(data1,callbackFunc),[1,2,5,7,2]);
